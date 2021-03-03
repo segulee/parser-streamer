@@ -48,7 +48,6 @@ pip install emitter-1.0.0.2-py3-none-any.whl
 
 ## for local test
 ```
-./install.sh
 pip install coverage
 pip install pytest
 
