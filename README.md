@@ -6,11 +6,20 @@
 - **git** for CM
 
 ## setting for kafka, hadoop, spark
+for host setting
+```
+vim /etc/hosts
+127.0.0.1 localhost kafka
+```
+
 hadoop & spark
 ```
 git clone https://github.com/segulee/docker-scripts.git
 cd docker-scripts/spark
 ./start.sh
+docker exec -it master /bin/bash
+start-all.sh
+exit()
 
 (default hadoop slave 2)
 (for N slave, ./start.sh N)
