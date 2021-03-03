@@ -1,0 +1,8 @@
+tests
+.vscode
+README.md
+Makefile
+htmlcov
+svctest
+venv
+*.pyc

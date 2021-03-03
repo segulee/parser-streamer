@@ -1,0 +1,23 @@
+# virtualenv
+venv
+
+# .vscode
+.vscode
+
+# setup
+
+dist/
+#build/
+*.egg-info
+
+# build 
+
+# test
+test-reports
+__pycache__
+.coverage
+.pytest_cache
+
+
+# txt upload prevents
+yoonha.txt
