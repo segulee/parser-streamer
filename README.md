@@ -5,6 +5,23 @@
 - **Docker** for builds
 - **git** for CM
 
+## setting for kafka, hadoop, spark
+hadoop & spark
+```
+git clone https://github.com/segulee/docker-scripts.git
+cd docker-scripts/spark
+./start.sh
+
+(default hadoop slave 2)
+(for N slave, ./start.sh N)
+```
+kafka (run spark container first for network settings)
+```
+git clone https://github.com/segulee/docker-scripts.git
+cd docker-scripts/kafka
+docker-compose -f on_spark.yml up
+```
+
 ## setting requirements for local test
 ```
 ./install.sh
