@@ -7,11 +7,12 @@
 
 ## setting requirements for local test
 ```
-pip install -r requirements.txt
+./install.sh
 ```
 
 ## for local test
 ```
+./install.sh
 pip install coverage
 pip install pytest
 
