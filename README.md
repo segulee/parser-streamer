@@ -1,4 +1,4 @@
-# app parser-streamer
+# parser-streamer
 
 ## setting requirements
 - python package **coverage** for unittest
