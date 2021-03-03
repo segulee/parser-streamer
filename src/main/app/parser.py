@@ -131,7 +131,7 @@ class KakaoTalkParser(Parser):
         return "{}.{:02d}.{:02d}".format(*[int(data) for data in time_data])
 
     def make_message(self, timestamp, msg_data) -> str:
-        """make kafka message like dict from input string
+        """make message suitable to send
 
         Args:
             timestamp: string - line to make dict

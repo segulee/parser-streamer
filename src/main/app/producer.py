@@ -10,6 +10,11 @@ log = logging.getLogger("app.producer")
 
 class Producer:
     def __init__(self, producer):
+        """produce kafka message to kafka server with input lines
+
+        Args:
+            producer: KafkaProducer
+        """
         self.producer = producer
 
     def produce(self, lines):
@@ -21,6 +26,11 @@ class MessageProducer(Producer):
         super().__init__(producer)
 
     def produce(self, lines):
+        """produce kafka message to kafka server with input lines
+
+        Args:
+            lines: iterable object to produce
+        """
         while True:
             try:
                 line = next(lines)
@@ -52,11 +62,11 @@ class MessageProducer(Producer):
         """make kafka message like dict from input string
 
         Args:
-            string: line to make dict
+            line: string - line to make dict
 
         Returns:
-            key: string kafka key
-            value: dict kafka value with timestamp, message
+            key: string - kafka key
+            value: dict - kafka value with timestamp, message
 
         Raises:
             ValueError: timestamp parsing error
